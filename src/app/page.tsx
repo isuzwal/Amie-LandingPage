@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <div
-        className={`w-full fixed z-50 p-2 bg-white  ${
+        className={`w-full fixed z-50 p-2 bg-white backdrop-blur-2xl  ${
           showShadow ? " shadow" : " "
         } `}
       >
