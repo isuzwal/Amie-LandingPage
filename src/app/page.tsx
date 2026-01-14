@@ -1,5 +1,6 @@
 "use client";
 
+import { HeroSection } from "@/components/ui/hero-section-view";
 import { Navbara } from "@/components/ui/navbara-view";
 import { Section } from "@/components/ui/section-view";
 
@@ -17,7 +18,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div
+      className="flex flex-col
+
+    "
+    >
       <div
         className={`w-full fixed z-50 p-2 bg-white backdrop-blur-2xl  ${
           showShadow ? " shadow" : " "
@@ -25,7 +30,9 @@ export default function Home() {
       >
         <Navbara />
       </div>
-      <Section>Hello</Section>
+      <Section>
+        <HeroSection />
+      </Section>
     </div>
   );
 }
