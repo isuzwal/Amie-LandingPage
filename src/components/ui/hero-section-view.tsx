@@ -1,5 +1,7 @@
 import { Pointer, Star } from "lucide-react";
 import Image from "next/image";
+import { Marquee } from "./marquee";
+import { CompaniesList } from "@/types";
 
 export const HeroSection = () => {
   return (
@@ -39,6 +41,54 @@ export const HeroSection = () => {
             priority
           />
         </div>
+      </div>
+      <div className="w-full py-2 mt-2 ">
+        <h2 className="text-neutral-500 font-semibold font-sans text-xs ">
+          Trusted by teams at
+        </h2>
+        <div className=" relative w-full  overflow-hidden">
+          <Marquee reverse={false}>
+            {CompaniesList.map((comp) => (
+              <div
+                key={comp.name}
+                className="flex gap-1 items-center font-sans font-medium text-[16px] px-2 py-0.5 text-neutral-700"
+              >
+                <span>{comp.icon}</span>
+                <p className="italic">{comp.name}</p>
+              </div>
+            ))}
+          </Marquee>
+          <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+          <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+        </div>
+        <Image
+          src={"/images/logos.webp"}
+          width={270}
+          height={270}
+          alt="log"
+          className="object-cover"
+        />
+      </div>
+      <div className="flex w-full flex-col gap-2  justify-start items-start ">
+        <div className=" w-full flex  justify-start md:leading-[3rem]  text-neutral-800  leading-10 tracking-tighter px-1">
+          <h1 className=" font-sans text-[24px] md:text-[40px] font-bold tracking-tight">
+            <span className="text-neutral-500 bg-neutral-500/10 rounded-[6px] p-0.5">
+              Within 47 seconds:{" "}
+            </span>
+            <br className="md:hidden block" />
+            Share summary.
+            <p className=" text-start font-sans font-bold text-[24px] md:text-[40px] tracking-tighter">
+              Keep CRM updated.
+              <br className="md:hidden block" />
+              Plan action items.
+              <br className="block md:hidden" />
+              Schedule next meeting
+            </p>
+          </h1>
+        </div>
+        <button className="border mt-1  max-w-[8rem] w-full px-5 py-2.5 font-sans border-blue-400  bg-blue-500 text-white text-[14px] font-medium rounded-md  shadow-[inset_1px_2px_1px_rgba(30,30,30,0.5)_inset_-1px_-2px_-1px_rgba(30,3030,0.5)] hover:bg-blue-400 hover:text-neutral-100   cursor-pointer  transition-transform duration-300 ease-in-out">
+          Get started
+        </button>{" "}
       </div>
     </div>
   );

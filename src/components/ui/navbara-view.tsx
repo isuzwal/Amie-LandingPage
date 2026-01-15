@@ -8,7 +8,7 @@ import { Bot, BrainCog, MessageCircle, Square } from "lucide-react";
 
 export const Navbara = () => {
   return (
-    <nav className=" max-w-5xl mx-auto w-full   flex items-center   py-2.5">
+    <nav className=" max-w-3xl mx-auto w-full   flex items-center   py-2.5">
       <div className="w-full flex items-center justify-between px-1.5">
         <motion.div
           initial={{ opacity: 0, x: -5 }}
@@ -80,7 +80,7 @@ export const Navbara = () => {
                     </div>
                     <div className=" flex gap-1 items-center  rounded-[4px] text-neutral-900 font-sans font-medium cursor-pointer duration-300 ease-in-out transition-all hover:bg-neutral-600/10 border-neutral-600 px-1.5 py-1 text-[11px]">
                       <div className="flex justify-center items-center bg-purple-200 border border-purple-200 rounded-[4px] w-4 h-4 ">
-                      <Square  className="size-2.5  text-purple-600 text-[10px]   "/>
+                        <Square className="size-2.5  text-purple-600 text-[10px]   " />
                       </div>
                       <p>Pages</p>
                     </div>
