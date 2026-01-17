@@ -54,9 +54,9 @@ export const Navbara = () => {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="green"
-                          stroke-width="2.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           className="lucide  lucide-text-align-start-icon lucide-text-align-start"
                         >
                           <path d="M21 5H3" />

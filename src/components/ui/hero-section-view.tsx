@@ -1,7 +1,7 @@
-import { Pointer, Star } from "lucide-react";
+import { Bot, Earth, Pointer, Star } from "lucide-react";
 import Image from "next/image";
 import { Marquee } from "./marquee";
-import { CompaniesList } from "@/types";
+import { CompaniesList, Greeatings } from "@/types";
 
 export const HeroSection = () => {
   return (
@@ -269,7 +269,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className=" w-full px-1">
+        <div className=" w-full py-1.5">
           <div className="flex items-center  justify-between px-2 ">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
@@ -406,15 +406,60 @@ export const HeroSection = () => {
             in two ways.
           </p>
         </div>
-        <div className="mt-2 relative border border-neutral-100 shadow-md w-full rounded-md overflow-hidden flex justify-center items-center">
-          <Image
-            src={"/images/notes.webp"}
-            alt="Note"
-            width={800}
-            height={600}
-            className="object-contain rounded-md w-full h-auto max-h-[45rem]"
-            priority
-          />
+        <div className="w-full  rounded-md mt-2 ">
+          <div className=" relative border border-neutral-100 shadow-md w-full rounded-md  flex justify-center items-center backdrop-blur-md bg-[#719cc2]/90 overflow-hidden  ">
+            <div className=" hidden md:grid grid-cols-3 z-50  bg-[#5681a6] backdrop-blur-md   text-white rounded-t-md gap-2 items-center justify-between   h-10 absolute top-0 left-0 w-full">
+              <div className="flex gap-1 items-center justify-center border-r border-neutral-600/60  h-full">
+                <Bot className="size-5" />
+                <span className="font-sans font-semibold text-base ">
+                  No bots in calls
+                </span>
+              </div>
+              <div className="flex gap-1 items-center justify-center border-r border-neutral-600/60  h-full ">
+                <Bot className="size-5" />
+                <span className="font-sans font-semibold text-base ">
+                  Summary
+                </span>
+              </div>
+              <div className="flex gap-1 items-center justify-center h-full">
+                <Earth className="size-5" />
+                <span className="font-sans font-semibold text-base">
+                  Action items
+                </span>
+              </div>
+            </div>
+            <Image
+              src={"/images/notes.webp"}
+              alt="Note"
+              width={800}
+              height={600}
+              className="object-contain  mt-2 md:mt-6 rounded-md w-full h-auto max-h-[45rem]"
+              priority
+            />
+          </div>
+        </div>
+        <div className="py-6">
+          <div className=" relative w-full  overflow-hidden">
+            <Marquee reverse={false}>
+              {Greeatings.map((comp) => (
+                <div
+                  key={comp.name}
+                  className="flex gap-1 items-center font-sans font-light text-[20px] px-2 py-0.5 text-neutral-700"
+                >
+                  <p className="italic">{comp.name}</p>
+                </div>
+              ))}
+            </Marquee>
+            <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+            <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+          </div>
+          <div className="w-full   flex justify-center items-center py-4 px-2">
+            <p className="text-neutral-400 font-sans font-medium text-[13px]">
+              We speak <span className="underline">17 languages </span>really
+              well .And <span className="underline">82 more </span> without
+              speaker labeling
+            </p>
+          </div>
         </div>
       </div>
     </div>

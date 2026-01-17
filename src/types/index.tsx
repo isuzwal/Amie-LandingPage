@@ -1,5 +1,5 @@
 import { Earth, Github, ShoppingBag } from "lucide-react";
-import { Props } from "./types";
+import { GreetingProps, Props } from "./types";
 import { SiDuolingo } from "react-icons/si";
 import { PiSpotifyLogoFill } from "react-icons/pi";
 import { SiBytedance } from "react-icons/si";
@@ -37,5 +37,35 @@ export const CompaniesList: Props[] = [
   {
     icon: <SiBytedance className="size-4" />,
     name: "ByteDance",
+  },
+];
+
+export const Greeatings: GreetingProps[] = [
+  {
+    name: "Hei",
+  },
+  {
+    name: "Bonjour",
+  },
+  {
+    name: "Hallo",
+  },
+  {
+    name: "नमस्ते",
+  },
+  {
+    name: "Ciao",
+  },
+  {
+    name: "Xin chào",
+  },
+  {
+    name: "Merhaba",
+  },
+  {
+    name: "Hola",
+  },
+  {
+    name: "Olà",
   },
 ];
