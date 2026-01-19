@@ -512,30 +512,64 @@ export const HeroSection = () => {
            Recording works or calls across all provides. Whether you use zoom ,Google Meet ,Slack, Huddle ,or Microsoft Teams, we&apos;ll get the notes
             </p>
           <div className="sm:p-4 p-2  mt-2">
-             <div className=" grid   grid-cols-2  sm:grid-cols-4 bg-white shadow-xs w-full border border-neutral-100 rounded-md">
+             <div className=" grid   grid-cols-2  sm:grid-cols-4 bg-white shadow-xs w-full border border-neutral-100 rounded-xl">
                <div className=" flex justify-center items-center  border border-neutral-100">
+                <div className="p-2">
+
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
                <circle cx="24" cy="24" r="20" fill="#2196f3"></circle><path fill="#fff" d="M29,31H14c-1.657,0-3-1.343-3-3V17h15c1.657,0,3,1.343,3,3V31z"></path><polygon fill="#fff" points="37,31 31,27 31,21 37,17"></polygon>
                </svg>
+                </div>
                </div>
                <div className=" flex justify-center items-center  border border-neutral-100">
+                <div className="p-2">
+
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
                <rect width="16" height="16" x="12" y="16" fill="#fff" transform="rotate(-90 20 24)"></rect><polygon fill="#1e88e5" points="3,17 3,31 8,32 13,31 13,17 8,16"></polygon><path fill="#4caf50" d="M37,24v14c0,1.657-1.343,3-3,3H13l-1-5l1-5h14v-7l5-1L37,24z"></path><path fill="#fbc02d" d="M37,10v14H27v-7H13l-1-5l1-5h21C35.657,7,37,8.343,37,10z"></path><path fill="#1565c0" d="M13,31v10H6c-1.657,0-3-1.343-3-3v-7H13z"></path><polygon fill="#e53935" points="13,7 13,17 3,17"></polygon><polygon fill="#2e7d32" points="38,24 37,32.45 27,24 37,15.55"></polygon><path fill="#4caf50" d="M46,10.11v27.78c0,0.84-0.98,1.31-1.63,0.78L37,32.45v-16.9l7.37-6.22C45.02,8.8,46,9.27,46,10.11z"></path>
               </svg>
+                </div>
                </div>
+
                <div className=" flex justify-center items-center  border border-neutral-100">
+               <div className="p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
                <path fill="#5c6bc0" d="M41.5 13A3.5 3.5 0 1 0 41.5 20 3.5 3.5 0 1 0 41.5 13zM4 40l23 4V4L4 8V40z"></path><path fill="#fff" d="M21 16.27L21 19 17.01 19.18 16.99 31.04 14.01 30.95 14.01 19.29 10 19.45 10 16.94z"></path><path fill="#5c6bc0" d="M36 14c0 2.21-1.79 4-4 4-1.2 0-2.27-.53-3-1.36v-5.28c.73-.83 1.8-1.36 3-1.36C34.21 10 36 11.79 36 14zM38 23v11c0 0 1.567 0 3.5 0 1.762 0 3.205-1.306 3.45-3H45v-8H38zM29 20v17c0 0 1.567 0 3.5 0 1.762 0 3.205-1.306 3.45-3H36V20H29z"></path>
                </svg>
+               </div>
                 </div>
                 <div className=" flex justify-center items-center  border border-neutral-100">
+                <div className="p-2">
+
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
                 <path fill="#33d375" d="M33,8c0-2.209-1.791-4-4-4s-4,1.791-4,4c0,1.254,0,9.741,0,11c0,2.209,1.791,4,4,4s4-1.791,4-4	C33,17.741,33,9.254,33,8z"></path><path fill="#33d375" d="M43,19c0,2.209-1.791,4-4,4c-1.195,0-4,0-4,0s0-2.986,0-4c0-2.209,1.791-4,4-4S43,16.791,43,19z"></path><path fill="#40c4ff" d="M8,14c-2.209,0-4,1.791-4,4s1.791,4,4,4c1.254,0,9.741,0,11,0c2.209,0,4-1.791,4-4s-1.791-4-4-4	C17.741,14,9.254,14,8,14z"></path><path fill="#40c4ff" d="M19,4c2.209,0,4,1.791,4,4c0,1.195,0,4,0,4s-2.986,0-4,0c-2.209,0-4-1.791-4-4S16.791,4,19,4z"></path><path fill="#e91e63" d="M14,39.006C14,41.212,15.791,43,18,43s4-1.788,4-3.994c0-1.252,0-9.727,0-10.984	c0-2.206-1.791-3.994-4-3.994s-4,1.788-4,3.994C14,29.279,14,37.754,14,39.006z"></path><path fill="#e91e63" d="M4,28.022c0-2.206,1.791-3.994,4-3.994c1.195,0,4,0,4,0s0,2.981,0,3.994c0,2.206-1.791,3.994-4,3.994	S4,30.228,4,28.022z"></path><path fill="#ffc107" d="M39,33c2.209,0,4-1.791,4-4s-1.791-4-4-4c-1.254,0-9.741,0-11,0c-2.209,0-4,1.791-4,4s1.791,4,4,4	C29.258,33,37.746,33,39,33z"></path><path fill="#ffc107" d="M28,43c-2.209,0-4-1.791-4-4c0-1.195,0-4,0-4s2.986,0,4,0c2.209,0,4,1.791,4,4S30.209,43,28,43z"></path>
                 </svg>
+                </div>
                   </div>
              </div>
+             <div  className="mt-6 flex  font-semibold justify-center items-center w-full text-neutral-400 font-sans text-[12px]">
+              <p>Amie works with any video call provider</p>
+              </div>
           </div>
-   
+          <div className="flex flex-col gap-6 justify-start  mt-6 ">
+          
+           <p className="text-neutral-600 font-sans  text-start">
+           When you join meetings through Amie, we&apos;ll automatically record them. If you join them through eg. Google Calendar, we&apos;ll automatically ask you to start recording the call. We&apos;ll also auto-stop the recording.
+          </p>
+         <p className="text-neutral-600 font-sans  text-start">   If you want Amie to work fully in the background, you can enable fully-automatic recordings. This will record every call without you having to do anything.
+          </p>
+          </div>
+           <div className="flex flex-col  justify-start  mt-6 ">
+            <h1 className="text-neutral-950 font-sans font-bold text-[20px]">Customzie the summary with private notes</h1>
+          <div className="flex flex-col gap-6 mt-4">
+
+           <p className="text-neutral-600 font-sans  text-start">
+          Take notes in private, before or during the meeting. we&apos;ll  then use those raw notes as focus points for the summary. You can define the headings we should use. List out key numbers as emphasis. Or use it to prepare the agenda.
+          </p>
+         <p className="text-neutral-600 font-sans text-start"> 
+        Private notes taking in the dedicated tab are not visible to anyone else. This makes them great for time-based notetaking.
+          </p>
+          </div>
+          </div>
         </div>
         </div>
       </div>
