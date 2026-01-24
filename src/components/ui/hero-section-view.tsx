@@ -1,4 +1,4 @@
-import { Bot, Check, Earth, Pointer, Star } from 'lucide-react';
+import { Bot, Check, Earth, Pointer, ScrollText, Star } from 'lucide-react';
 import Image from 'next/image';
 import { Marquee } from './marquee';
 import { CompaniesList, Greeatings } from '@/types';
@@ -409,21 +409,21 @@ export const HeroSection = () => {
         <div className="w-full  rounded-md mt-2 ">
           <div className=" relative border border-neutral-100 shadow-md w-full rounded-md  flex justify-center items-center backdrop-blur-md bg-[#719cc2]/90 overflow-hidden  ">
             <div className=" hidden md:grid grid-cols-3 z-50  bg-[#5681a6] backdrop-blur-md   text-white rounded-t-md gap-2 items-center justify-between   h-10 absolute top-0 left-0 w-full">
-              <div className="flex gap-1 items-center justify-center border-r border-neutral-600/60  h-full">
-                <Bot className="size-5" />
-                <span className="font-sans font-semibold text-base ">
+              <div className="flex gap-2 items-center justify-center border-r border-neutral-600/60  h-full">
+                <Bot className="size-4.5" />
+                <span className="font-sans font-semibold text-[16px] ">
                   No bots in calls
                 </span>
               </div>
-              <div className="flex gap-1 items-center justify-center border-r border-neutral-600/60  h-full ">
-                <Bot className="size-5" />
-                <span className="font-sans font-semibold text-base ">
+              <div className="flex gap-2 items-center justify-center border-r border-neutral-600/60  h-full ">
+                <ScrollText className="size-4.5" />
+                <span className="font-sans font-semibold text-[16px] ">
                   Summary
                 </span>
               </div>
-              <div className="flex gap-1 items-center justify-center h-full">
-                <Earth className="size-5" />
-                <span className="font-sans font-semibold text-base">
+              <div className="flex gap-2 items-center justify-center h-full">
+                <Earth className="size-4.5" />
+                <span className="font-sans font-semibold text-[16px]">
                   Action items
                 </span>
               </div>

@@ -3,15 +3,15 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./accordion";
+} from './accordion';
 
 export const FAQ = () => {
   return (
-    <div className="py-4 w-full">
+    <div className="py-8 mt-6  w-full">
       <div className="flex flex-col gap-2  w-full justify-center items-center ">
         <h1 className="text-neutral-950 font-bold font-sans text-2xl">FAQs</h1>
         <p className="text-neutral-500 font-sans font-medium text-center  text-[16px] px-2 ">
-          If you can&apos;t find the answer to your question below, email us at{" "}
+          If you can&apos;t find the answer to your question below, email us at{' '}
           <span className="text-black  cursor-pointer text-[15px] font-semibold font-sans underline">
             care@amie.so
           </span>
@@ -55,7 +55,7 @@ export const FAQ = () => {
               </AccordionTrigger>
               <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p className="text-neutral-500 font-sans font-medium text-[14px]">
-                  In Setting {" >"} Connections, you can connects as many
+                  In Setting {' >'} Connections, you can connects as many
                   Google-based accounts as you like .iCloud +Outlook are coming
                   some time in the future
                 </p>
@@ -96,8 +96,8 @@ export const FAQ = () => {
               </AccordionTrigger>
               <AccordionContent className="flex flex-col gap-4 text-balance">
                 <p className="text-neutral-500 font-sans font-medium text-[14px]">
-                  In Settings {">"} Contact us. If you&apso;re not yet using the
-                  product but want to request a feature you can email{" "}
+                  In Settings {'>'} Contact us. If you&apso;re not yet using the
+                  product but want to request a feature you can email{' '}
                   <span className="underline text-neutral-900 cursor-pointer">
                     care@amie.so.
                   </span>
