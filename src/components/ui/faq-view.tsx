@@ -7,9 +7,11 @@ import {
 
 export const FAQ = () => {
   return (
-    <div className="py-8 mt-6  w-full">
+    <div className=" py-10 sm:py-20  mt-8 sm:mt-16  w-full">
       <div className="flex flex-col gap-2  w-full justify-center items-center ">
-        <h1 className="text-neutral-950 font-bold font-sans text-2xl">FAQs</h1>
+        <h1 className="text-neutral-950 font-bold font-sans text-xl sm:text-3xl">
+          FAQs
+        </h1>
         <p className="text-neutral-500 font-sans font-medium text-center  text-[16px] px-2 ">
           If you can&apos;t find the answer to your question below, email us at{' '}
           <span className="text-black  cursor-pointer text-[15px] font-semibold font-sans underline">

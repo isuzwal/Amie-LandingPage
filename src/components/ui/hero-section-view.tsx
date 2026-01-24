@@ -51,7 +51,7 @@ export const HeroSection = () => {
             {CompaniesList.map((comp) => (
               <div
                 key={comp.name}
-                className="flex gap-1 items-center font-sans font-medium text-[16px] px-2 py-0.5 text-neutral-700"
+                className="flex gap-1 items-center font-sans font-medium text-[14px] px-2 py-0.5 text-neutral-700"
               >
                 <span>{comp.icon}</span>
                 <p className="italic">{comp.name}</p>
@@ -411,19 +411,19 @@ export const HeroSection = () => {
             <div className=" hidden md:grid grid-cols-3 z-50  bg-[#5681a6] backdrop-blur-md   text-white rounded-t-md gap-2 items-center justify-between   h-10 absolute top-0 left-0 w-full">
               <div className="flex gap-2 items-center justify-center border-r border-neutral-600/60  h-full">
                 <Bot className="size-4.5" />
-                <span className="font-sans font-semibold text-[16px] ">
+                <span className="font-sans font-semibold text-[14px] ">
                   No bots in calls
                 </span>
               </div>
               <div className="flex gap-2 items-center justify-center border-r border-neutral-600/60  h-full ">
                 <ScrollText className="size-4.5" />
-                <span className="font-sans font-semibold text-[16px] ">
+                <span className="font-sans font-semibold text-[14px] ">
                   Summary
                 </span>
               </div>
               <div className="flex gap-2 items-center justify-center h-full">
                 <Earth className="size-4.5" />
-                <span className="font-sans font-semibold text-[16px]">
+                <span className="font-sans font-semibold text-[14px]">
                   Action items
                 </span>
               </div>
@@ -463,11 +463,11 @@ export const HeroSection = () => {
         </div>
       </div>
       <div className=" w-full flex flex-col gap-3">
-        <div className="p-2">
+        <div className="">
           <h3 className="font-sans font-bold text-[18px]">
             No more bot in your calls
           </h3>
-          <p className="mt-2 text-neutral-400  text-[16px]  font-sans text-start">
+          <p className="mt-2 text-neutral-400  text-[14px]  font-sans text-start">
             When you record with Amie,you control everything from your notch.
             Without the weird bots joining, we can offer a better experience:
           </p>
@@ -477,7 +477,7 @@ export const HeroSection = () => {
             <div className="w-5 h-5 rounded-full  bg-green-200 flex justify-center items-center border border-green-200">
               <Check className="text-green-400 size-3.5" />
             </div>
-            <p className="text-neutral-500  text-[16px]  font-sans  text-start">
+            <p className="text-neutral-500  text-[14px]  font-sans  text-start">
               Pasue recording to speak off the record
             </p>
           </div>
@@ -485,7 +485,7 @@ export const HeroSection = () => {
             <div className="w-5 h-5 rounded-full  bg-green-200 flex justify-center items-center border border-green-200">
               <Check className="text-green-400 size-3.5" />
             </div>
-            <p className="text-neutral-500  text-[16px]  font-sans  text-start">
+            <p className="text-neutral-500  text-[14px]  font-sans  text-start">
               Stop automatically if microphone is unused
             </p>
           </div>
@@ -493,7 +493,7 @@ export const HeroSection = () => {
             <div className="w-5 h-5 rounded-full  bg-green-200 flex justify-center items-center border border-green-200">
               <Check className="text-green-400 size-3.5" />
             </div>
-            <p className="text-neutral-500  text-[16px]  font-sans  text-start">
+            <p className="text-neutral-500  text-[14px]  font-sans  text-start">
               Split recordings if you&apos;re staying in the same room
             </p>
           </div>
@@ -501,7 +501,7 @@ export const HeroSection = () => {
             <div className="w-5 h-5 rounded-full  bg-green-200 flex justify-center items-center border border-green-200">
               <Check className="text-green-400 size-3.5" />
             </div>
-            <p className="text-neutral-500  text-[16px]  font-sans  text-start">
+            <p className="text-neutral-500  text-[14px]  font-sans  text-start">
               Separates speakers and remebers their names
             </p>
           </div>
@@ -512,7 +512,7 @@ export const HeroSection = () => {
           </div> */}
           <div className="w-full  px-5 py-2 mt-4  relative">
             <div className=" absolute left-0 inset-0 h-auto w-1 bg-green-400  border border-green-400"></div>
-            <p className="text-neutral-800 font-sans font-medium text-start text-[16px]">
+            <p className="text-neutral-800 font-sans font-medium text-start text-[14px]">
               The notch-like overlay UI is super neat and out of the way, the
               transcription works great and is multilingual which is super
               powerful. The automatic todo suggestions that can just add to my
@@ -524,11 +524,11 @@ export const HeroSection = () => {
           </div>
         </div>
         <div>
-          <div className="p-2">
+          <div className="">
             <h1 className="text-neutral-950 font-sans font-semibold text-[20px] text-start">
               Works wherever you have meetings
             </h1>
-            <p className="text-neutral-400  font-sans text-start text-[16px]">
+            <p className="text-neutral-400  font-sans text-start text-[14px]">
               Recording works or calls across all provides. Whether you use zoom
               ,Google Meet ,Slack, Huddle ,or Microsoft Teams, we&apos;ll get
               the notes
@@ -678,7 +678,7 @@ export const HeroSection = () => {
                 <p>Amie works with any video call provider</p>
               </div>
             </div>
-            <div className="flex flex-col gap-6 justify-start  mt-6 ">
+            <div className="flex flex-col gap-6 text-[14px] justify-start  mt-6 ">
               <p className="text-neutral-600 font-sans  text-start">
                 When you join meetings through Amie, we&apos;ll automatically
                 record them. If you join them through eg. Google Calendar,
@@ -696,7 +696,7 @@ export const HeroSection = () => {
               <h1 className="text-neutral-950 font-sans font-bold text-[20px]">
                 Customzie the summary with private notes
               </h1>
-              <div className="flex flex-col gap-6 mt-4">
+              <div className="flex flex-col gap-6 text-[14px] mt-4">
                 <p className="text-neutral-600 font-sans  text-start">
                   Take notes in private, before or during the meeting.
                   we&apos;ll then use those raw notes as focus points for the

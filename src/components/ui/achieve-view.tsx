@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export const AchieveView = () => {
   return (
-    <div className="w-full mt-6  py-4 ">
-      <div className="w-full  flex-col  gap-2 flex justify-center items-center py-10 px-2 ">
+    <div className="w-full mt-6  py-4 px-2 ">
+      <div className="w-full  flex-col  gap-2 flex justify-center items-center py-10  ">
         <div className="flex text-center flex-col gap-1">
           <h1 className=" text-xl sm:text-3xl font-sans font-bold ">
             What you can achieve with{' '}
@@ -16,7 +16,7 @@ export const AchieveView = () => {
             </span>
           </p>
         </div>
-        <div className=" mt-12  flex flex-col  w-full p-2">
+        <div className=" mt-12  flex flex-col  w-full ">
           <div className=" hidden relative  sm:grid grid-cols-3 w-full gap-2">
             <div
               className="absolute left-0 top-1/2 h-px bg-neutral-400 "
@@ -144,7 +144,7 @@ export const AchieveView = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  py-8 px-1">
+      <div className="w-full  py-8">
         <div className="flex flex-col gap-1 justify-start items-start">
           <span className="text-blue-500 00 font-sans font-bold text-[14px]">
             AI Chat
@@ -180,7 +180,7 @@ export const AchieveView = () => {
           </div>
         </div>
       </div>
-      <div className="w-full pb-8  p-4">
+      <div className="w-full pb-8  p-2">
         <div className=" max-w-xl w-full  py-2  px-8   h-auto">
           <Image
             src={'/images/chat.webp'}
@@ -301,8 +301,15 @@ export const AchieveView = () => {
           do it for you
         </p>
         <div className="w-full  rounded-md mt-6 ">
-          <div className=" relative border border-neutral-100 shadow-md w-full rounded-md  flex justify-center items-center backdrop-blur-md bg-[#719cc2]/90 overflow-hidden  ">
-            <div className=" hidden md:grid grid-cols-3 z-50  bg-[#5681a6] backdrop-blur-md   text-white rounded-t-md gap-2 items-center justify-between   h-10 absolute top-0 left-0 w-full">
+          <div className=" relative border border-neutral-100 shadow-md w-full rounded-md  flex justify-center items-center backdrop-blur-md  overflow-hidden  ">
+            <Image
+              src={'/images/bg3.webp'}
+              alt="bg"
+              width={800}
+              height={600}
+              className=" absolute top-0 left-0 w-full h-full object-cover  z-20 "
+            />
+            <div className=" hidden md:grid grid-cols-3 z-50  bg-[#5681a6]/50 backdrop-blur-md   text-white rounded-t-md gap-2 items-center justify-between   h-10 absolute top-0 left-0 w-full">
               <div className="flex gap-2 items-center justify-center border-r border-neutral-600/60  h-full">
                 <Bot className="size-4.5" />
                 <span className="font-sans font-semibold text-[16px] ">
@@ -327,10 +334,44 @@ export const AchieveView = () => {
               alt="chat-actions"
               width={800}
               height={600}
-              className="object-contain  mt-2 md:mt-8 rounded-md w-full h-auto max-h-[45rem]"
+              className="object-contain  z-50  mt-2 md:mt-8 rounded-md w-full h-auto max-h-[45rem]"
               priority
             />
           </div>
+        </div>
+      </div>
+      <div className="w-full px-1  py-6 ">
+        <div className="flex flex-col gap-2 ">
+          <span className="text-blue-400 font-sans font-semibold text-[14px]">
+            Integrations
+          </span>
+          <h1 className="font-bold  text-2xl  text-start sm:text-4xl font-sans">
+            Keep your tools updates, with one click{' '}
+          </h1>
+          <p className=" mt-4   py-4 text-[14px] text-neutral-500 text-start font-sans">
+            Too many tools require you to use them all the time to be useful.
+            Amie works just as well in the background. The integrations with
+            Google and Apple Calendar make sure every meeting gets recorded.
+          </p>
+          <p className="text-neutral-500 font-sans text-[14px] py-2 text-start">
+            The Gmail integration lets us re-create your writing style. To
+            AI-draft your emails just like you wrote it.
+          </p>
+          <p className="text-neutral-500 font-sans text-[14px] mt-2  text-start">
+            We know that you likely have a system of record already. We&apos;ve
+            built integrations with Slack, Notion, Hubspot and Pipedrive. So
+            that you can get the summaries there with a few clicks.
+          </p>
+        </div>
+        <div className="mt-16 py-4   relative border border-neutral-100 shadow-md w-full rounded-md overflow-hidden flex justify-center items-center">
+          <Image
+            src={'/images/flow.webp'}
+            alt="Hero_Image"
+            width={800}
+            height={600}
+            className="object-contain rounded-md w-full h-auto max-h-[45rem]"
+            priority
+          />
         </div>
       </div>
     </div>
